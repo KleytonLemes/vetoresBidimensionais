@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;    
+}
+
+body {
+    background-color: rgb(42, 42, 42);
+    color: rgb(216, 216, 216);
+}
+
+.beckgroundLoguin {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contBuscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    gap: 79px;
+}
+
+
+
+.formConteiner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.divInput {
+    padding: 15px;
+}
+
+.inputBuscador {
+    width: 250px;
+    height: 36px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.divNomeFantasma {
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+
+.conteinerFantasma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 67px;
+    padding: 42px;
+}
+
+.caracteristicasFantasma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    top: 158px;
+    /* position: relative; */
+    text-align: center;
+    max-width: 221px;
+}
+
+.ft1 {
+    width: 332px;
+    height: 444px;
+}
+
+
+
+
+
+
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .testando {
+    color: white;
+      position: relative;
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      top: -1px;
+      padding: 9px 62px;
+      font-size: .75em;
+      letter-spacing: .35em;
+      text-align: center;
+      text-transform: uppercase;
+      border: 1px solid hsla(0,0%,100%,.2);
+      transition: all .2s ease;
+      margin: 0 auto;
+      
+      &:before, 
+      &:after {
+        content: 'BUY TICKETS';
+        position: absolute;
+          top: 0;
+          left: 0;
+        padding: 8px 0;
+        width: 100%;
+        -webkit-clip: rect(0px, 0px, 0px, 0px);
+        clip: rect(0px, 0px, 0px, 0px);
+        background: #fff;
+        color: #000;
+      }
+      
+      &:before {
+        left: -3px;
+        top: -2px;
+        text-shadow: 2px 0 #fff;
+        box-shadow: 2px 0 #fff;
+      }
+    
+      &:after {
+        left: 2px;
+        bottom: -2px;
+        text-shadow: -1px 0 #fff;
+        box-shadow: -1px 0 #fff;
+      }
+    
+      &:hover {
+        background: white;
+        color: black;
+      }
+    
+      &:hover:before {
+          animation: glitch-test 1.5s infinite linear alternate-reverse;
+      }
+      
+      &:hover:after {
+          animation: glitch-test 2s infinite linear alternate;
+      }
+    
+  }
+  
+  @keyframes glitch-test {
+    0% {
+      clip: rect(-3px, 600px, 0px, 0px);
+    }
+    5.88235% {
+      clip: rect(0px, 600px, 0px, 0px);
+    }
+    11.76471% {
+      clip: rect(-3px, 600px, 0px, 0px);
+    }
+    17.64706% {
+      clip: rect(-3px, 600px, 0px, 0px);
+    }
+    23.52941% {
+      clip: rect(100px, 600px, 100px, 0px);
+    }
+    29.41176% {
+      clip: rect(0px, 600px, 600px, 0px);
+    }
+    35.29412% {
+      clip: rect(100px, 600px, 0px, 0px);
+    }
+    41.17647% {
+      clip: rect(0px, 600px, 600px, 0px);
+    }
+    47.05882% {
+      clip: rect(100px, 600px, 0px, 0px);
+    }
+    52.94118% {
+      clip: rect(-3px, 600px, 0px, 0px);
+    }
+    58.82353% {
+      clip: rect(100px, 450px,100px, 0px);
+    }
+    64.70588% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+    70.58824% {
+      clip: rect(100px, 450px, 100px, 0px);
+    }
+    76.47059% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+    82.35294% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+    88.23529% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+    94.11765% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+    100% {
+      clip: rect(0px, 450px, 0px, 0px);
+    }
+  }
+
+
+
+
+
+
+.ftMenu {
+    width: 50px;
+    height: 50px;
+    border: solid 2px rgb(72, 72, 72);
+    border-radius: 100%;
+}
+
+nav.menuLateral {
+    width: 72px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.956);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgba(8, 8, 8, 0.13);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 2s;
+    border-right: solid 10px rgb(33, 33, 33);
+}
+
+nav.menuLateral:hover {
+    width: 230px;
+}
+
+.btnExpandir {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btnExpandir>i {
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul li.itensDoMenu {
+    transition: 1s;
+}
+
+ul li.itensDoMenu:hover {
+    background: rgba(71, 20, 190, 0.74);
+    border-radius: 3px;
+}
+
+ul li.itensDoMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    line-height: 30px;
+    max-width: 1px;
+    
+}
+
+ul li.itensDoMenu a .txtLink {
+    margin-left: 20px;
+}
+
+ul li.itensDoMenu a .icon>i {
+    font-size: 30px;
+}
+
+.ftMoldura {
+    height: 547px;
+    width: 434px;
+    position: absolute;
+    top: 23vh;
+    left: 52vh;
+}
